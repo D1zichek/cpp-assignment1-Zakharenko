@@ -18,10 +18,7 @@ void SystemConfig::show()
 
 void SystemConfig::add_system(std::string user, std::string system)
 {
-    SystemEntity entity;
-    entity.user = std::move(user);
-    entity.system = std::move(system);
-    m_users_systems.push_back(std::move(entity));
+    m_users_systems.emplace_back(std::move(user), std::move(system));
     
 }
 
