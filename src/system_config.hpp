@@ -22,6 +22,8 @@ private:
     {
         std::string user;
         std::string system;
+        SystemEntity(const std::string& user_, const std::string& system_)
+        : user(user_), system(system_) {}
     };
 
     std::vector<SystemEntity> m_users_systems;
