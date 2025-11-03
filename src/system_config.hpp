@@ -14,9 +14,9 @@ public:
 
     void show(); // IMPLEMENT
 
-    void add_system(std::string user, std::string system){
-        m_users_systems.emplace_back(user, system);
-    }
+    // Declaration only — implementation is in src/system_config.cpp
+    void add_system(std::string user, std::string system);
+
 private:
     struct SystemEntity
     {
